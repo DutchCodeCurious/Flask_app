@@ -12,8 +12,7 @@ def home():
 def handle_form_submission():
     if request.method == 'POST':
         user_input = request.form['input_text']
-        reversed_text = user_input[::-1]
-        return render_template('result.html', reversed_text=reversed_text)
+        return render_template('result.html', new_name=user_input)
 
 
 if __name__ == '__main__':
