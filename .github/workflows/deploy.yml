@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug
+        run: |
+          ls -l
+          ls -l ..
+
       - name: Set up Python environment
         run: python -m venv env
 
@@ -17,9 +22,7 @@ jobs:
         run: source env/bin/activate
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install --user -r ../requirements.txt
+        run: pip install -r ../requirements.txt
 
       - name: Build website
         run: |
