@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug
-        run: |
-          ls -l
-          ls -l Flask_app
-
       - name: Set up Python environment
         run: python -m venv env
 
