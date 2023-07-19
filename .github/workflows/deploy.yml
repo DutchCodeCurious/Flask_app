@@ -17,7 +17,7 @@ jobs:
         run: source env/bin/activate
 
       - name: Install dependencies
-        run: pip install -r /Users/joppepetit/Desktop/apps/Flask_app/requirements.txt
+        run: env/bin/pip install -r /Users/joppepetit/Desktop/apps/Flask_app/requirements.txt
 
       - name: Build website
         run: |
