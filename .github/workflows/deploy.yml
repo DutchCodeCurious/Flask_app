@@ -20,7 +20,7 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Install dependencies
-        run: pip install -r ${{ github.workspace }}requirements.txt
+        run: pip install -r ${{ github.workspace }}/requirements.txt
 
       - name: Build website
         run: |
